@@ -5,11 +5,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-    background-color: #081b29;
-    color: #ededed;
-}
-
+/*header section styling*/
 .header {
     position: fixed;
     background-color: transparent;
@@ -60,6 +56,14 @@ body.show-mobile-menu .navbar {
     color: #00abf0;
 }
 
+#menu_button {
+    display: none;
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+}
+
+/*home section styling*/
 .home {
     background: #081b29;
     height: 100vh;
@@ -103,6 +107,7 @@ body.show-mobile-menu .navbar {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #ededed;
 }
 
 .home-content h3 {
@@ -133,6 +138,7 @@ body.show-mobile-menu .navbar {
 .home-content p {
     font-size: 30px;
     margin: 20px 0 40px;
+    color: #ededed;
 }
 
 .home-content .btn-box {
@@ -195,13 +201,87 @@ body.show-mobile-menu .navbar {
     color: #081b29;
 }
 
-#menu_button {
-    display: none;
-    font-size: 28px;
-    color: black;
-    cursor: pointer;
+
+
+/*About section styling*/
+.about-section {
+    padding: 120px 10%;
+    background: deepskyblue;
+    color: #ffffff;
 }
 
+.about-section h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.about-section h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-section .about-image-wrapper {
+    flex: 1;
+    text-align: center;
+}
+
+.about-section .about-image-wrapper img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.about-section .about-details {
+    flex: 2;
+}
+
+.about-section .about-details .text {
+    line-height: 1.8;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.social-link-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-link {
+    color: #ffffff;
+    font-size: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+
+/*responsive media query for max width 900px*/
 @media screen and (max-width: 900px) {
     .logo {
         font-size: 30px;
