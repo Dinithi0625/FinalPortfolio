@@ -8,3 +8,4 @@ menu_button.addEventListener("click", () => {
 close_button.addEventListener("click", () => {
     document.body.classList.remove("show-mobile-menu");
 });
+
