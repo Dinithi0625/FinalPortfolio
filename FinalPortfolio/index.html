@@ -22,7 +22,6 @@
             <button id="close_button" ><i class="fa-solid fa-xmark"></i></button>
             <a href="#" class="active" >Home</a>
             <a href="#about">About</a>
-            <a href="#Skills">Skills</a>
             <a href="#Projects">Projects</a>
             <a href="#Gallery">Gallery</a>
             <a href="#contact">Contact</a>
@@ -145,16 +144,30 @@
 </section>
 
 <!--Contact Me Section-->
-<section>
-    <div>
-        <h1>CONTACT ME</h1>
-        <input type="text"  placeholder="First name"> <br><br>
-        <input type="text"  placeholder="Last name">  <br><br>
-        <input type="text"  placeholder="Mobile NO">  <br><br>
-        <input type="text"  placeholder="Email">  <br><br>
-        <input type="text"  placeholder="Your message"> <br><br>
+<section class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section-content">
+        <ul class="contact-info-list">
+            <li class="contact-info">
+                <i class="fa-solid fa-location-pin"></i>
+                <p>558/1,Pitigala Road,Bogoda,Elpitiya.</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>0724929195</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>nimashabvdinithi@gmail.com</p>
+            </li>
 
-        <button type="button"> Send </button>
+        </ul>
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </section>
 <script src="script.js"></script>
