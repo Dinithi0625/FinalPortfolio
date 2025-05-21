@@ -32,14 +32,14 @@
 </section>
 
 <!--  Home Section-->
-<section class="home">
+<section class="home" id="home">
     <div class="home-content">
         <h1> Hi! </h1>
         <h3> I'm Dinithi Nimasha </h3>
         <p>I am a Full Stack Developer. I Will Create a Design and Development that can give value to your product.</p>
         <div class="btn-box">
-            <a href="#">Hire Me</a>
-            <a href="#">Let's talk</a>
+            <a href="#contact">Hire Me</a>
+            <a href="#about">Let's talk</a>
         </div>
     </div>
     <div class="home-image-wrapper">
@@ -49,7 +49,7 @@
 </section>
 
 <!--  About Section-->
-<section class="about-section">
+<section class="about-section" id="about">
     <div class="section-content">
         <div class="about-details">
             <h1 class="section-title">About Me...</h1>
@@ -73,7 +73,7 @@
 </section>
 
 <!--  Project Section-->
-<section class="project-section">
+<section class="project-section" id="Projects">
     <h1 class="section-title">My Projects</h1>
         <div class="section-content">
             <div class="slider-content">
@@ -128,7 +128,7 @@
 </section>
 
 <!--  Gallery Section-->
-<section class="Gallery">
+<section class="Gallery" id="Gallery">
     <div class="gallery-header">
         <h1>GALLERY</h1>
     </div>
@@ -144,7 +144,7 @@
 </section>
 
 <!--Contact Me Section-->
-<section class="contact-section">
+<section class="contact-section" id="contact">
     <h2 class="section-title">Contact Me</h2>
     <div class="section-content">
         <ul class="contact-info-list">
@@ -162,12 +162,13 @@
             </li>
 
         </ul>
-        <form action="#" class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+
     </div>
 </section>
 <script src="script.js"></script>
