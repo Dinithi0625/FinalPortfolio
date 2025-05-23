@@ -307,7 +307,6 @@ body.show-mobile-menu .navbar {
     transform: scale(1.2);
     color: #000000;
 }
-
 /*projects section styling*/
 .project-section {
     padding: 60px 10%;
@@ -320,7 +319,7 @@ body.show-mobile-menu .navbar {
     text-align: center;
     font-size: 42px;
     margin-bottom: 50px;
-    color: white;
+    color: black;
     position: relative;
 }
 
